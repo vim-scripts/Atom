@@ -1,6 +1,6 @@
 "Maintainer:    Greg Sexton <gregsexton@gmail.com>
-"Last Change:   2011-03-03
-"Version:       1.0
+"Last Change:   2011-04-22
+"Version:       1.1
 "URL:           http://www.gregsexton.org/vim-color-schemes/atom-color/
 
 set background=dark
@@ -13,12 +13,15 @@ if version > 580
 endif
 let g:colors_name="atom"
 
-hi Normal       guifg=white       guibg=#304050
+hi Normal       guifg=#e8ecf0     guibg=#304050
 
 hi DiffDelete   guifg=#304050     guibg=#203040
 hi DiffAdd      guibg=#002851
 hi DiffChange   guibg=#450303
 hi DiffText     guibg=#990909     gui=none
+
+hi diffAdded    guifg=#00bf00     guibg=#1d2c1b
+hi diffRemoved  guifg=#e00000     guibg=#2d1c20
 
 hi Cursor       guibg=khaki       guifg=slategrey
 hi VertSplit    guibg=#102030     guifg=#102030   gui=none
@@ -39,11 +42,15 @@ hi Visual       gui=none          guifg=white     guibg=#D04040
 hi WarningMsg   guifg=salmon
 
 if version >= 700 " Vim 7.x specific colors
- hi CursorLine   guifg=NONE    guibg=#203040 gui=NONE
- hi CursorColumn guifg=NONE    guibg=#203040 gui=NONE
- hi MatchParen   guifg=red     guibg=#304050 gui=BOLD
- hi Pmenu        guifg=#f6f3e8 guibg=#152535 gui=NONE
- hi PmenuSel     guifg=#000000 guibg=#cae682 gui=NONE
+    hi CursorLine   guifg=NONE    guibg=#203040 gui=NONE
+    hi CursorColumn guifg=NONE    guibg=#203040 gui=NONE
+    hi MatchParen   guifg=red     guibg=#304050 gui=BOLD
+    hi Pmenu        guifg=#f6f3e8 guibg=#152535 gui=NONE
+    hi PmenuSel     guifg=#000000 guibg=#cae682 gui=NONE
+endif
+
+if version >= 703 " Vim 7.x specific colors
+    hi ColorColumn  guifg=#e8ecf0 guibg=#283848
 endif
 
 " syntax highlighting groups

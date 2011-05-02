@@ -7,3 +7,5 @@ All important screenshots can be found at: http://www.gregsexton.org/vim-color-s
 Italics are not used in this theme. 
 
 Currently Atom is GVim only. I tend to use the default colours when (infrequently) in a terminal. If you have a strong desire for added terminal support leave me a comment, drop me an email or even better: send me a patch!
+
+There is now a GitHub repository for Atom at: https://github.com/gregsexton/Atom
